@@ -1,0 +1,35 @@
+#studio-wrap {
+    padding-top: 37.5px;
+}
+
+#description {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    margin-left: 90px;
+}
+
+.stagger-item {
+    height: 25px;
+}
+
+#table {
+    display: inline-block;
+    position: absolute;
+    animation: show 1s;
+}
+
+th {
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.studio, .contact {
+    width: 270px;
+    height: 25px;
+}
+
+.studio > a:hover {
+    color: rgb(184, 140, 255);
+    transition: 0.15s;
+}

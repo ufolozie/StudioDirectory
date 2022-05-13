@@ -1,0 +1,103 @@
+@keyframes show {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul, li { list-style: none }
+
+header {
+    position: relative;
+    background-color: #fff;
+    height: 125px;
+    line-height: 125px;
+    width: 95%;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    word-spacing: 0.1px;
+}
+
+#icon {
+    position: absolute;
+    padding: 27.5px 0;
+    height: 70px; width: 70px;
+}
+
+section {
+    position: relative;
+    background-color: #fff;
+    width: 95%;
+    min-height: 600px!important;
+    margin-top: 7px;
+    font-family: 'Pretendard-Regular';
+}
+
+#left-wrap {
+    position: absolute;
+    width: 125px;
+    height: 145px;
+    left: 0px;
+    top: 0px;
+}
+
+#right-wrap {
+    margin-left: 125px;
+}
+
+#line {
+    width: 120px;
+    height: 0.7px;
+    display: block;
+    position: absolute;
+    top: -7px;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+.menu {
+    position: absolute;
+    display: block;
+    padding-left: 5px;
+    width: 120px;
+    height: 160px;
+    animation: show 1s;
+}
+
+.menu_s { padding: 5px 10px }
+
+#menu1, .submenu {
+    transition: 0.25s;
+}
+
+#menu1:hover {
+    color: #59b4ee;
+}
+
+.submenu:hover {
+    color: #939393;
+}

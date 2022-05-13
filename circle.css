@@ -1,0 +1,99 @@
+@keyframes circleShow1 {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.5);
+        background-color: magenta;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes circleShow2 {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.5);
+        background-color: palevioletred;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes circleShow3 {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.5);
+        background-color: yellow;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes circleShow4 {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.5);
+        background-color: aqua;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+#circle-wrapper {
+    position: relative;
+}
+
+.circle {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle:nth-child(1) {
+    background-color: #e64c3c;
+    left: 275px;
+    transition: 0.2s;
+    animation: circleShow1 1s;
+    animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+}
+
+.circle:nth-child(2) {
+    background-color: #f29c1f;
+    transition: 0.2s;
+    animation: circleShow2 1s;
+    animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+.circle:nth-child(3) {
+    background-color: #24ae5f;
+    top: 275px;
+    transition: 0.2s;
+    animation: circleShow3 1s;
+    animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+.circle:nth-child(4) {
+    background-color: #90bae1;
+    left: 275px;
+    top: 275px;
+    transition: 0.2s;
+    animation: circleShow4 1s;
+    animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
